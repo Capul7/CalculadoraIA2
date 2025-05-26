@@ -3,7 +3,7 @@ uvicorn[standard]
 easyocr
 opencv-python-headless
 pillow
-numpy
+numpy==1.24.4
 python-multipart
 jinja2
 torch==1.13.1+cpu
