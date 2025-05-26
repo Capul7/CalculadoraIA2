@@ -7,9 +7,6 @@ __pycache__/
 *.log
 .env
 
-# Ignorar los modelos sueltos en la raíz (solo para uso local)
-models/*.pth
-
 # NO ignorar la estructura de carpetas ni los modelos dentro de subcarpetas
 !models/detection/craft_mlt_25k.pth
 !models/recognition/latin_g2.pth
