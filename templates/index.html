@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Números Manuscritos</title>
+  <link href="/static/style.css" rel="stylesheet" />
+</head>
+<body class="dark">
+
+  <header>
+    <img src="/static/logo_universidad.png" alt="Logo Universidad" class="logo-u" />
+    <div class="info">
+      <strong>CARLOS DE LEÓN 3590-21-11790</strong><br />
+      <strong>RAÚL MORALES 3590-21-2528</strong><br />
+      <strong>RUBÉN PÉREZ 5990-17-15713</strong><br />
+    </div>
+  </header>
+
+  <h2 class="titulo">Calculadora de Números Manuscritos</h2>
+
+  <div class="seccion">
+    <h3>Cámara</h3>
+    <video id="video" autoplay></video><br />
+    <canvas id="canvas" width="320" height="240" style="display: none;"></canvas>
+    <button id="btnCapturar">📷 Capturar desde Cámara</button>
+  </div>
+
+  <div class="seccion">
+    <h3>Subir Imagen</h3>
+    <input type="file" id="fileInput" accept="image/*" />
+    <button id="btnProcesar">🖼️ Subir Imagen</button>
+  </div>
+
+  <div class="seccion">
+    <h3>Resultado de la Operación</h3>
+    <p><span class="label">Expresión detectada:</span> <span id="expresion">-</span></p>
+    <p><span class="label">Resultado:</span> <span id="resultado">-</span></p>
+  </div>
+
+  <footer>Inteligencia Artificial</footer>
+  <script src="/static/script.js" defer></script>
+</body>
+</html>

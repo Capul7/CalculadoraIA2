@@ -1,0 +1,19 @@
+__pycache__/
+.idea/
+.venv/
+*.pyc
+*.pyo
+*.pyd
+*.log
+.env
+
+# Ignorar los modelos sueltos en la raíz (solo para uso local)
+models/*.pth
+
+# NO ignorar la estructura de carpetas ni los modelos dentro de subcarpetas
+!models/detection/craft_mlt_25k.pth
+!models/recognition/latin_g2.pth
+!models/model_config.json
+
+# Ignorar el script local
+descargar_modelos.py
